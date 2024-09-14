@@ -3,6 +3,7 @@
     "key": "ctrl+k ctrl+e",
     "command": "workbench.view.explorer"
   },
+
   {
     "key": "ctrl+k ctrl+p",
     "command": "workbench.actions.view.problems"
@@ -24,11 +25,11 @@
     "command": "workbench.action.terminal.new"
   },
   {
-    "key": "ctrl+k ctrl+i",
+    "key": "ctrl+k ctrl+m",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+k ctrl+m",
+    "key": "ctrl+k ctrl+i",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -62,4 +63,5 @@
     "command": "workbench.action.switchWindow",
     "when": "! config.simple-project-switcher.present"
   }
+
 ]
