@@ -1,19 +1,27 @@
 {
+  // SETTINGS:-----------------------------------------------------
+
+  // SECTIONS:
+  // 1. FONTS
+  // 2. EDITOR
+  // 3. FORMATTERS
+  // 4. VIM
+
   // FONTS:-------------------------------------------------------
   // mononoki, MonoLisa, FiraCode, JetBrains Mono, Operator Mono, Dank Mono
   "editor.fontFamily": "mononoki",
-  "terminal.integrated.fontFamily": "mononoki",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.lineHeight": 1.2,
   "editor.letterSpacing": -0.3,
   "workbench.sideBar.location": "right",
   "terminal.integrated.fontSize": 8,
+  "terminal.integrated.fontFamily": "mononoki",
   "terminal.integrated.lineHeight": 1.5,
 
   // EDITOR:-------------------------------------------------------
   "editor.cursorSurroundingLines": 20,
-  "workbench.colorTheme": "Catppuccin Latte",
+  // "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "eq-material-theme-icons",
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
@@ -153,16 +161,24 @@
     },
     { "before": ["leader", "v"], "commands": [":vsplit"] },
     { "before": ["leader", "s"], "commands": [":split"] },
-    { "before": ["leader", "o"], "commands": ["workbench.action.quickOpen"] },
-
+    
     { "before": ["g", "s"], "commands": ["workbench.action.gotoSymbol"] },
     { "before": ["g", "b"], "commands": ["workbench.action.focusSideBar"] },
     { "before": ["g", "c"], "commands": ["references-view.clear"] },
     { "before": ["g", "x"], "commands": ["references-view.clearHistory"] },
+    { "before": ["[", "f"], "commands": ["editor.foldAll"] },
+    { "before": ["]", "f"], "commands": ["editor.unfoldAll"] },
     {
-      "before": ["leader", "f"],
+      "before": ["leader", "f", "a"],
+      "commands": ["fuzzySearch.activeTextEditor"]
+    },
+    {
+      "before": ["leader", "f", "w"],
       "commands": ["workbench.action.findInFiles"]
     },
+    { 
+      "before": ["leader", "f", "f"],
+    "commands": ["workbench.action.quickOpen"] },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
