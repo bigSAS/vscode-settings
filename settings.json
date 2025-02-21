@@ -25,7 +25,6 @@
   "workbench.tree.indent": 10,
   "explorer.compactFolders": false,
   "explorer.decorations.badges": false,
-  "git.decorations.enabled": false,
   // EDITOR:-------------------------------------------------------
   // CUSTOM UI
   "custom-ui-style.font.sansSerif": "mononoki",
@@ -43,7 +42,7 @@
   "editor.lightbulb.enabled": "off",
   "editor.hover.enabled": false,
   "files.trimTrailingWhitespace": true,
-  "editor.detectIndentation": false,
+//   "editor.detectIndentation": false,
   "editor.guides.indentation": false,
   "editor.renderLineHighlight": "none",
   "editor.occurrencesHighlight": "off",
@@ -69,7 +68,6 @@
   "workbench.sideBar.location": "right",
   "editor.lineNumbers": "relative",
   "editor.wordWrap": "on",
-  "scm.diffDecorations": "none",
   "terminal.integrated.gpuAcceleration": "on",
   // SMOOTH SCROLLING
   // "editor.cursorSmoothCaretAnimation": "on",
@@ -274,7 +272,7 @@
   },
   "vim.vimrc.enable": true,
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Tokyo Night Storm",
+//   "workbench.colorTheme": "Tokyo Night Storm",
   "editor.cursorBlinking": "solid",
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
