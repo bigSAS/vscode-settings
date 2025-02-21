@@ -8,30 +8,73 @@
   // 4. VIM
 
   // FONTS:-------------------------------------------------------
-  // mononoki, MonoLisa, FiraCode, JetBrains Mono, Operator Mono, Dank Mono
+  // mononoki, Gintronic, MonoLisa, FiraCode, JetBrains Mono, Operator Mono, Dank Mono
   "editor.fontFamily": "mononoki",
+  // "editor.fontWeight": "bold",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.lineHeight": 1.2,
   "editor.letterSpacing": -0.3,
-  "workbench.sideBar.location": "right",
-  "terminal.integrated.fontSize": 8,
-  "terminal.integrated.fontFamily": "mononoki",
-  "terminal.integrated.lineHeight": 1.5,
 
+  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontFamily": "mononoki",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.letterSpacing": -0.3,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 10,
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "git.decorations.enabled": false,
   // EDITOR:-------------------------------------------------------
-  "editor.cursorSurroundingLines": 20,
+  // CUSTOM UI
+  "custom-ui-style.font.sansSerif": "mononoki",
+  "custom-ui-style.stylesheet": {
+    ".quick-input-widget": "top: 25vh !important;",
+    ".quick-input-list .scrollbar": "display: none !important;",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)"
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.background": "#000000"
+  },
+  "editor.codeLens": false,
+  "editor.links": false,
+  "editor.matchBrackets": "never",
+  "editor.lightbulb.enabled": "off",
+  "editor.hover.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.detectIndentation": false,
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "update.mode": "none",
+  "extensions.ignoreRecommendations": true,
+  //   "editor.selectionHighlight": false,
+  // ----
+  "editor.cursorSurroundingLines": 8,
   // "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "eq-material-theme-icons",
   "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
   "editor.lineNumbers": "relative",
   "editor.wordWrap": "on",
   "scm.diffDecorations": "none",
-  "extensions.ignoreRecommendations": true,
   "terminal.integrated.gpuAcceleration": "on",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "editor.smoothScrolling": true,
+  // SMOOTH SCROLLING
+  // "editor.cursorSmoothCaretAnimation": "on",
+  // "workbench.list.smoothScrolling": true,
+  // "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "peacock.favoriteColors": [
     {
@@ -73,10 +116,19 @@
     {
       "name": "catpuchin light",
       "value": "#c39cbd"
+    },
+    {
+      "name": "bluelokoooo",
+      "value": "#adfbfc"
+    },
+    {
+      "name": "dark",
+      "value": "#2a2239"
     }
   ],
   "liveServer.settings.donotShowInfoMsg": true,
-  "rest-client.previewOption": "full",
+  "rest-client.previewOption": "body",
+  // "rest-client.previewOption": "exchange",
   "json.maxItemsComputed": 100000,
 
   // FORMATTERRS:--------------------------------------------------
@@ -161,7 +213,7 @@
     },
     { "before": ["leader", "v"], "commands": [":vsplit"] },
     { "before": ["leader", "s"], "commands": [":split"] },
-    
+
     { "before": ["g", "s"], "commands": ["workbench.action.gotoSymbol"] },
     { "before": ["g", "b"], "commands": ["workbench.action.focusSideBar"] },
     { "before": ["g", "c"], "commands": ["references-view.clear"] },
@@ -176,9 +228,10 @@
       "before": ["leader", "f", "w"],
       "commands": ["workbench.action.findInFiles"]
     },
-    { 
+    {
       "before": ["leader", "f", "f"],
-    "commands": ["workbench.action.quickOpen"] },
+      "commands": ["workbench.action.quickOpen"]
+    },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -220,5 +273,10 @@
     "vscodevim.vim": 1
   },
   "vim.vimrc.enable": true,
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "editor.cursorBlinking": "solid",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }
