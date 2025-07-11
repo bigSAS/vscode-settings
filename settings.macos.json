@@ -1,0 +1,561 @@
+{
+    // SETTINGS:-----------------------------------------------------
+    // SECTIONS:
+    // 1. FONTS
+    // 2. EDITOR
+    // 3. FORMATTERS
+    // 4. VIM
+    // FONTS:-------------------------------------------------------
+    // mononoki, Gintronic, MonoLisa, FiraCode, JetBrains Mono, Operator Mono, Dank Mono
+    // "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontFamily": "mononoki",
+    // "editor.fontWeight": "bold",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.2,
+    "editor.letterSpacing": -0.3,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "mononoki",
+    "terminal.integrated.lineHeight": 1.1,
+    // "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.letterSpacing": -0.3,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 10,
+    "explorer.compactFolders": false,
+    "explorer.decorations.badges": false,
+    "explorer.confirmDelete": false,
+    "workbench.editor.decorations.badges": false,
+    "git.decorations.enabled": false,
+    // titlebar small -> native
+    "window.titleBarStyle": "native",
+    //custom ui style
+    "custom-ui-style.electron": {
+        "titleBarStyle": "hiddenInset",
+    },
+    // !!! isntall custom ui style extension
+    // "custom-ui-style.font.monospace": "mononoki",
+    // "custom-ui-style.font.sansSerif": "mononoki",
+    // "custom-ui-style.stylesheet": {
+    //   ".quick-input-widget": "top: 25vh !important;",
+    //   ".quick-input-list .scrollbar": "display: none !important;",
+    //   ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)"
+    // },
+    // EDITOR:-------------------------------------------------------
+    // CUSTOM UI
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#000000"
+    },
+    "editor.cursorSurroundingLines": 5,
+    "editor.codeLens": false,
+    "editor.links": false,
+    "editor.matchBrackets": "never",
+    "editor.lightbulb.enabled": "off",
+    "editor.hover.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    //   "editor.detectIndentation": false,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": "off",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "update.mode": "none",
+    "extensions.ignoreRecommendations": true,
+    //   "editor.selectionHighlight": false,
+    // ----
+    // "workbench.colorTheme": "Night Owl Light",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "left",
+    "editor.lineNumbers": "relative",
+    "editor.wordWrap": "on",
+    "terminal.integrated.gpuAcceleration": "on",
+    // SMOOTH SCROLLING
+    // "editor.cursorSmoothCaretAnimation": "on",
+    // "workbench.list.smoothScrolling": true,
+    // "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "catpuchin light",
+            "value": "#c39cbd"
+        },
+        {
+            "name": "bluelokoooo",
+            "value": "#adfbfc"
+        },
+        {
+            "name": "dark",
+            "value": "#2a2239"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "rest-client.previewOption": "body",
+    // "rest-client.previewOption": "exchange",
+    "json.maxItemsComputed": 100000,
+    // FORMATTERRS:--------------------------------------------------
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[dockercompose]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "[html]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jinja-html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "files.associations": {
+        "**/templates/*/*.html": "django-html"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    // "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+    //   "editor.defaultFormatter": "monosans.djlint",
+    //   "editor.formatOnSave": true
+    // },
+    "[django-html]": {
+        "editor.defaultFormatter": "monosans.djlint"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "[css]": {
+    //   "editor.defaultFormatter": "vscode.css-language-features"
+    // },
+    // VIM:----------------------------------------------------------
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "workbench.editor.showTabs": "single",
+    "breadcrumbs.enabled": false,
+    // VIM INSERTMODE KEY BINDINGS
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    // VIM VISUALMODE KEY BINDINGS
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        // Move selected lines while staying in visual mode
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        // toggle comment selection
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        }
+    ],
+    // VIM NORMALMODE KEY BINDINGS
+    "vim.normalModeKeyBindingsNonRecursive": [
+        /*
+      saspoon aka harpoon bez harpoon (sory primeagen ;))
+      <l>p1 -> pin1
+      <l>1 -> goto pin1
+      works for 1-5
+    */
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "1"
+            ],
+            "after": [
+                "m",
+                "A"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1",
+            ],
+            "after": [
+                "'",
+                "A",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "2"
+            ],
+            "after": [
+                "m",
+                "B"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2",
+            ],
+            "after": [
+                "'",
+                "B",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "3"
+            ],
+            "after": [
+                "m",
+                "C"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3",
+            ],
+            "after": [
+                "'",
+                "C",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "4"
+            ],
+            "after": [
+                "m",
+                "D"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4",
+            ],
+            "after": [
+                "'",
+                "D",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "5"
+            ],
+            "after": [
+                "m",
+                "E"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "5",
+            ],
+            "after": [
+                "'",
+                "E",
+            ]
+        },
+        // end of saspoon
+        {
+            "before": [
+                "]",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "[",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.prevInFiles"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "f"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "f"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "fuzzySearch.activeTextEditor"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "d"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.openRecent"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "after": [
+                "<C-w>",
+                "q"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    // "vim.vimrc.enable": true,
+    "workbench.activityBar.location": "top",
+    //   "workbench.colorTheme": "Tokyo Night Storm",
+    "editor.cursorBlinking": "solid",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
