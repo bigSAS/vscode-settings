@@ -250,10 +250,22 @@
             "commands": [
                 "editor.action.commentLine"
             ]
-        }
+        },
     ],
     // VIM NORMALMODE KEY BINDINGS
     "vim.normalModeKeyBindingsNonRecursive": [
+        //editor.action.formatDocument
+        // L format code
+        {
+            "before": [
+                "leader",
+                "f",
+                "c"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
         /*
       saspoon aka harpoon bez harpoon (sory primeagen ;))
       <l>p1 -> pin1
