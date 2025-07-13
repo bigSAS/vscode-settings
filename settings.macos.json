@@ -79,10 +79,10 @@
     "editor.wordWrap": "on",
     "terminal.integrated.gpuAcceleration": "on",
     // SMOOTH SCROLLING
+    // "editor.smoothScrolling": true,
     // "editor.cursorSmoothCaretAnimation": "on",
     // "workbench.list.smoothScrolling": true,
-    // "editor.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
+    // "terminal.integrated.smoothScrolling": true,
     "peacock.favoriteColors": [
         {
             "name": "Angular Red",
@@ -565,8 +565,6 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "workbench.colorTheme": "Catppuccin Macchiato",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.list.smoothScrolling": true,
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
