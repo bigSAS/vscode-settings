@@ -254,6 +254,18 @@
     ],
     // VIM NORMALMODE KEY BINDINGS
     "vim.normalModeKeyBindingsNonRecursive": [
+        // toggle blame
+        // git.blame.toggleEditorDecoration
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "b"
+            ],
+            "commands": [
+                "git.blame.toggleEditorDecoration"
+            ]
+        },
         //editor.action.formatDocument
         // L format code
         {
